@@ -6,14 +6,24 @@
 <html class="no-js" lang="">
     <!--<![endif]-->
     <head>
+        <!--Plugin gijgo-->
+        <meta charset="utf-8" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script
+            src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"
+            type="text/javascript"
+        ></script>
+        <link
+            href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <!--plugin gijgo-->
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>ShaynaAdmin - HTML5 Admin Template</title>
-        <meta name="description" content="ShaynaAdmin - HTML5 Admin Template" />
+        <title>Cent</title>
+        <meta name="description" content="Cent" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png" />
-        <link rel="shortcut icon" href="https://i.imgur.com/QRAUqs9.png" />
 
         <link
             rel="stylesheet"
@@ -41,24 +51,15 @@
         />
         <link rel="stylesheet" href="assets/css/cs-skin-elastic.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
-        <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="https://cdn.jsdelivr.net/npm/jqvmap@1.5.1/dist/jqvmap.min.css"
-            rel="stylesheet"
-        />
 
         <link
-            href="https://cdn.jsdelivr.net/npm/weathericons@2.1.0/css/weather-icons.css"
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800"
             rel="stylesheet"
+            type="text/css"
         />
-        <link
-            href="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.css"
-            rel="stylesheet"
-        />
+
+        <link href="images/cent-logo.png" rel="icon" type="image/gif" />
+        <link rel="stylesheet" href="./css/style.css" />
 
         <style>
             #weatherWidget .currentDesc {
@@ -108,42 +109,42 @@
                                 ><i class="menu-icon fa fa-laptop"></i>Dashboard
                             </a>
                         </li>
-                        <li class="menu-title">Barang</li>
+                        <li class="menu-title">Essentials</li>
                         <!-- /.menu-title -->
-                        <li class="">
-                            <a href="#">
-                                <i class="menu-icon fa fa-list"></i>Lihat
-                                Barang</a
-                            >
-                        </li>
                         <li class="">
                             <a href="#">
                                 <i class="menu-icon fa fa-plus"></i>Tambah
-                                Barang</a
+                                Pembelian</a
+                            >
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <i class="menu-icon fa fa-money"></i>Riwayat
+                                Pembelian</a
                             >
                         </li>
 
-                        <li class="menu-title">Foto Barang</li>
+                        <li class="menu-title">Wants</li>
                         <!-- /.menu-title -->
                         <li class="">
                             <a href="#">
-                                <i class="menu-icon fa fa-list"></i>Lihat Foto
-                                Barang</a
+                                <i class="menu-icon fa fa-plus"></i>Tambah
+                                Pembelian</a
                             >
                         </li>
                         <li class="">
                             <a href="#">
-                                <i class="menu-icon fa fa-plus"></i>Tambah Foto
-                                Barang</a
+                                <i class="menu-icon fa fa-money"></i>Riwayat
+                                Pembelian</a
                             >
                         </li>
 
-                        <li class="menu-title">Transaksi</li>
+                        <li class="menu-title">Savings</li>
                         <!-- /.menu-title -->
                         <li class="">
                             <a href="#">
-                                <i class="menu-icon fa fa-list"></i>Lihat
-                                Transaksi</a
+                                <i class="menu-icon fa fa-plus"></i>Tambah
+                                Tabungan</a
                             >
                         </li>
                     </ul>
@@ -155,119 +156,22 @@
         <!-- Right Panel -->
         <div id="right-panel" class="right-panel">
             <!-- Header-->
-            <header id="header" class="header">
-                <div class="top-left">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="./"
-                            ><img src="images/logo.png" alt="Logo"
-                        /></a>
-                        <a class="navbar-brand hidden" href="./"
-                            ><img src="images/logo2.png" alt="Logo"
+            <header id="header" class="header grey">
+                <div class="top-left grey">
+                    <div class="navbar-header grey">
+                        <a class="navbar-brand" href="#"
+                            ><img
+                                src="images/logo-cent-panjang.png"
+                                alt="Logo"
+                                style="width: 70px; height: 30px;"
                         /></a>
                         <a id="menuToggle" class="menutoggle"
                             ><i class="fa fa-bars"></i
                         ></a>
                     </div>
                 </div>
-                <div class="top-right">
-                    <div class="header-menu">
-                        <div class="user-area dropdown float-right">
-                            <a
-                                href="#"
-                                class="dropdown-toggle active"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                            >
-                                <img
-                                    class="user-avatar rounded-circle"
-                                    src="images/admin.jpg"
-                                    alt="User Avatar"
-                                />
-                            </a>
-
-                            <div class="user-menu dropdown-menu">
-                                <a class="nav-link" href="#"
-                                    ><i class="fa fa-power -off"></i>Logout</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </header>
             <!-- /#header -->
-            <!-- Content -->
-            <div class="content">
-                <div class="orders">
-                    <div class="row">
-                        <div class="col-12">
-                            <h3 class="title">Essentials</h3>
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="box-title">Riwayat Transaksi</h4>
-                                </div>
-                                <div class="card-body--">
-                                    <div class="table-stats order-table ov-h">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>Name</th>
-                                                    <th>Location</th>
-                                                    <th>Price</th>
-                                                    <th>Status</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>##</td>
-                                                    <td>dummy</td>
-                                                    <td>dummy</td>
-                                                    <td>dummy</td>
-                                                    <td>dummy</td>
-                                                    <td>
-                                                        <a
-                                                            href=""
-                                                            class="btn btn-info btn-sm"
-                                                        >
-                                                            <i
-                                                                class="fa fa-picture-o"
-                                                            ></i>
-                                                        </a>
-                                                        <a
-                                                            href=""
-                                                            class="btn btn-primary btn-sm"
-                                                        >
-                                                            <i
-                                                                class="fa fa-pencil"
-                                                            ></i>
-                                                        </a>
-                                                        <form
-                                                            action=""
-                                                            method="post"
-                                                            class="d-inline"
-                                                        >
-                                                            <button
-                                                                class="btn btn-danger btn-sm"
-                                                            >
-                                                                <i
-                                                                    class="fa fa-trash"
-                                                                ></i>
-                                                            </button>
-                                                        </form>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /.content -->
             <div class="clearfix"></div>
         </div>
         <!-- /#right-panel -->
