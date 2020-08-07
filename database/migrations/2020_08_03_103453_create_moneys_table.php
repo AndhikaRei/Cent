@@ -13,12 +13,12 @@ class CreateMoneysTable extends Migration
      */
     public function up()
     {
-        Schema::create('moneys', function (Blueprint $table) {
+        Schema::create('money', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
             $table->string('type');
             $table->integer('amount');
-            
+
             $table->timestamps();
         });
     }

@@ -9,7 +9,7 @@
     </tr>
     <tr>
         <th>Type</th>
-        <td>Rp.{{$item->type}}</td>
+        <td>{{$item->type}}</td>
     </tr>
     <tr>
         <th>Hari</th>
@@ -30,7 +30,7 @@
     <tr>
         <th>Deskripsi</th>
         <td>
-            <?php echo $item->description ; ?>
+            <?php echo $item->description; ?>
         </td>
     </tr>
 </table>
