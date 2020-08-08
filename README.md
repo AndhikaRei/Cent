@@ -3,20 +3,20 @@
 Solusi dari Kelompok 24 bernama BEBAS adalah sebuah web yang beranama Cent
 
 Dengan anggota dan pembagian tugasnya adalah sebagai berikut:
-	Kelompok 10 Buddies 1
-	1. Nicholas Darmawan 16519009 - Front end
-	2. Reihan Andika Putra 16519316 - Back end
-	3. Kadek Dwi Bagus AU 16519350 - Back end
-	4. Karel Renaldi 16519445 - Front end
-	5. James Chandra 16519446 - Front end
-	6. Muhammad Galih R R 16519455 - Front end
-	Kelompok 8 Buddies 4 
-	1. Haning Nanda H 16519004 - Penjelasan
-	2. M Reyhanullah B 165199306 - Penjelasan
-	3. Muhammad Iqbal S 16519349 - Penjelasan
-	4. Cindy Amandani N 165199410 - Penjelasan
-	5. Ilyasa Salafi Putra J 16519457 - Penjelasan
-	6. Muhammad Asyrofi Al H 16519494
+<p> Kelompok 10 Buddies 1 </p>
+	<p> 1. Nicholas Darmawan 16519009 - Front end </p>
+	<p> 2. Reihan Andika Putra 16519316 - Back end </p>
+	<p> 3. Kadek Dwi Bagus AU 16519350 - Back end </p>
+	<p> 4. Karel Renaldi 16519445 - Front end </p>
+	<p> 5. James Chandra 16519446 - Front end </p>
+	<p> 6. Muhammad Galih R R 16519455 - Front end </p>
+	<p> Kelompok 8 Buddies 4 </p>
+	<p> 1. Haning Nanda H 16519004 - Penjelasan </p>
+	<p> 2. M Reyhanullah B 165199306 - Penjelasan </p>
+	<p> 3. Muhammad Iqbal S 16519349 - Penjelasan</p>
+	<p> 4. Cindy Amandani N 165199410 - Penjelasan</p>
+	<p> 5. Ilyasa Salafi Putra J 16519457 - Penjelasan</p>
+	<p> 6. Muhammad Asyrofi Al H 16519494</p>
 
 Cent adalah sebuah web yang membantu agar penggunanya dapat mengatur keuangan secara proporsional sehingga uang dapat digunakan dengan baik.
 
