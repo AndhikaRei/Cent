@@ -16,6 +16,7 @@ placeholder.descripton
 git clone https://github.com/AndhikaRei/Cent.git
 cd cent
 ```
+Sebelum melakukan ini pastikan kamu sudah menginstall git di di pc. Setelah melakukan ini file hasil dari github mestinya sudah ada di pc mu.
 
 #### 2. Install Composer dan npm dependency
 
@@ -24,6 +25,7 @@ Untuk windows, dapat mendownload composer pada [link](https://getcomposer.org/do
 composer install
 npm install
 ```
+Apabila menggunakan laragon maka tidak perlu menginstall composer
 
 #### 3. Copy file .env
 
