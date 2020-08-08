@@ -23,7 +23,7 @@
                 <div class="card-body-text">
                     <h4>Balance for Essentials</h4>
                 </div>
-                <h2 class="money">Rp.{{ $money->amount }}</h2>
+                <h2 class="money">Rp.{{ $money->amount }},000</h2>
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
                 <div class="card-body-text">
                     <h4>Savings</h4>
                 </div>
-                <h2 class="money">Rp.{{ $saving->amount }}</h2>
+                <h2 class="money">Rp.{{ $saving->amount }},000</h2>
             </div>
         </div>
     </div>

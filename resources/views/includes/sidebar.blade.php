@@ -32,12 +32,12 @@
                         Pembelian</a>
                 </li>
 
-                <li class="menu-title">Savings</li>
+                <li class="menu-title">Total Balance + Saving</li>
                 <!-- /.menu-title -->
                 <li class="">
-                    <a href="{{ route('transactions.create','type=Saving') }}">
+                    <a href="{{ route('transactions.create','type=Total') }}">
                         <i class="menu-icon fa fa-plus"></i>Tambah
-                        Tabungan</a>
+                        Uang</a>
                 </li>
                 <form class="px-4 py-0" , action="{{url('logout')}}" , method="POST">
                     @csrf

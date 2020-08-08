@@ -34,8 +34,12 @@ class TransactionController extends Controller
     {
         $user_id = Auth::user()->id;
         $type = $request->type;
-        $money = Money::with(['user'])->where('user_id', $user_id)->where('type',$type)->first();
-        $saving = Money::with(['user'])->where('user_id', $user_id)->where('type','Saving')->first();
+        if ($type =="Total") {
+            $money = Money::where('user_id', $user_id)->first();
+        }else {
+            $money = Money::where('user_id', $user_id)->where('type',$type)->first();
+        }
+        $saving = Money::where('user_id', $user_id)->where('type','Saving')->first();
         return view("pages.$type.create", [
             'money' => $money,
             'saving' => $saving
