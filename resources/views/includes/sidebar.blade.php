@@ -39,10 +39,10 @@
                         <i class="menu-icon fa fa-plus"></i>Tambah
                         Tabungan</a>
                 </li>
-                <form class="px-4 py-0" , action="{{url('logout')}}" , method="POST">
+                <!-- <form class="px-4 py-0" , action="{{url('logout')}}" , method="POST">
                     @csrf
                     <button type="submit" class="btn btn-sm btn-primary ">Logout(tombol sementara)</button>
-                </form>
+                </form> -->
             </ul>
         </div>
         <!-- /.navbar-collapse -->
