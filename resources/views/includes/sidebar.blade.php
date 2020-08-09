@@ -6,7 +6,7 @@
                     <a href="{{ route('dashboard') }}"><i class="menu-icon fa fa-laptop"></i>Dashboard
                     </a>
                 </li>
-                <li class="menu-title">Essentials</li>
+                <li class="menu-title ">Essentials</li>
                 <!-- /.menu-title -->
                 <li class="">
                     <a href="{{ route('transactions.create','type=Essential')}}">
@@ -41,7 +41,7 @@
                 </li>
                 <form class="px-4 py-0" , action="{{url('logout')}}" , method="POST">
                     @csrf
-                    <button type="submit" class="btn btn-sm btn-primary ">Logout(tombol sementara)</button>
+                    <button type="submit" class="btn btn-sm btn-primary "></button>
                 </form>
             </ul>
         </div>

@@ -22,9 +22,17 @@
             <div class="card card-money">
                 <div class="card-body card-money-body">
                     <div class="card-body-text">
-                        <h4>Savings</h4>
+                        <h4>Details</h4>
                     </div>
-                    <h2 class="money">Rp.{{ $saving->amount }},000</h2>
+
+                    <dl class="row mb-0">
+                        <dt class="col-3 offset-3">Wants</dt>
+                        <dd class="col-5 offset-1">Rp.{{ $want->amount }},000</dd>
+                        <dt class="col-3 offset-3">Essential</dt>
+                        <dd class="col-5 offset-1">Rp.{{ $essential->amount }},000</dd>
+                        <dt class="col-3 offset-3">Savings</dt>
+                        <dd class="col-5 offset-1">Rp.{{ $saving->amount }},000</dd>
+                    </dl>
                 </div>
             </div>
         </div>
@@ -50,7 +58,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-header">
                         <h4 class="box-title">
                             Recent Activities
                         </h4>
@@ -65,6 +73,7 @@
                                         <th>Name</th>
                                         <th class="d-none d-md-table-cell">Location</th>
                                         <th>Price (Rupiah)</th>
+                                        <th>Type</th>
                                         <th class="d-none d-md-table-cell">Date</th>
                                         <th class="d-none d-md-table-cell">Time</th>
                                         <th>Status</th>
@@ -73,11 +82,12 @@
                                 <tbody>
                                     <?php $i = 1; ?>
                                     @forelse ($items as $item)
-                                    <tr>
+                                    <tr class="bg-light">
                                         <td>{{ $i }}</td>
                                         <td>{{ $item->name }}</td>
                                         <td class="d-none d-md-table-cell">{{ $item->location }}</td>
                                         <td>Rp. {{ $item->price }}</td>
+                                        <td>{{ $item->type }}</td>
                                         <td class="d-none d-md-table-cell">{{ $item->date }}</td>
                                         <td class="d-none d-md-table-cell">{{ $item->time }}</td>
                                         <td>
@@ -116,7 +126,7 @@
 <!-- .animated -->
 <div class="col-xl-7 chart" style="margin: 0 auto;">
     <div class="card card-chart">
-        <h3>Expense Alocation</h3>
+        <h3 class="card-header">Expense Alocation</h3>
         <div class="chart-container ov-h">
             <div id="flotPie1" class="float-chart"></div>
         </div>
@@ -145,7 +155,8 @@
         var piedata = [{
                 label: "Essentials",
                 data: [
-                    [0, {{
+                    [0, {
+                        {
                             $pie['essential']
                         }
                     }]
