@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Money;
 use App\Http\Requests\MoneyRequest;
+use App\Models\Transaction;
 use Illuminate\Support\Facades\Auth;
 
 class MoneyController extends Controller
@@ -37,7 +38,31 @@ class MoneyController extends Controller
      */
     public function store(Request $request)
     {
-        
+        $store = $request->amount;
+        $user_id = Auth::user()->id;
+        $moneytotal = Money::where('user_id', $user_id)->first();
+        $want = Money::where('user_id', $user_id)->where('type',"Want")->first();
+        $essential = Money::where('user_id', $user_id)->where('type',"Essential")->first();
+        $saving = Money::where('user_id', $user_id)->where('type','Saving')->first();
+        $bank = Money::where('user_id', $user_id)->where('type',"Bank")->first();
+
+        if ($moneytotal < $store) {
+            return redirect()->back()->with(['moneyerror'=>'You have insufficient money']);
+        } elseif ($saving->amount >= $store) {
+                $saving -> update(['amount'=> $saving->amount - $store]);
+                $bank -> update(['amount'=> $bank->amount + $store]);
+        } elseif ($saving->amount + $want->amount >= $store) {
+            $want -> update(['amount'=> $saving->amount + $want->amount - $store]);
+            $bank -> update(['amount'=> $bank->amount + $store]);
+            $saving -> update(['amount'=> 0]);
+        } elseif ($saving->amount + $want->amount + $essential->amount >= $store) {
+            $essential -> update(['amount'=> $saving->amount + $want->amount +$essential->amount - $store]);
+            $bank -> update(['amount'=> $bank->amount + $store]);
+            $saving -> update(['amount'=> 0]);
+            $want -> update(['amount'=> 0]);
+        }
+        $moneytotal -> update(['amount'=> $moneytotal->amount - $store]);
+        return redirect()->back();
     }
 
     public function initiate()
@@ -108,7 +133,7 @@ class MoneyController extends Controller
             $saving = Money::find($id+3);
             $saving->update(['amount'=> $saving->amount + floor($request->amount * 0.2 )]);
 
-            return redirect()->route('dashboard');
+            return redirect()->back();
         } 
     }
 

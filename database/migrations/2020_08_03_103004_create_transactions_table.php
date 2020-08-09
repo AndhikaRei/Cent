@@ -20,7 +20,7 @@ class CreateTransactionsTable extends Migration
             $table->integer('price');
             $table->string('name');
             $table->longText('description')->nullable();
-            $table->date('date')->nullable();
+            $table->string('date')->nullable();
             $table->time('time')->nullable();
             $table->string('location');
             $table->string('status');

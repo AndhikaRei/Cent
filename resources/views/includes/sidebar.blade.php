@@ -6,7 +6,7 @@
                     <a href="{{ route('dashboard') }}"><i class="menu-icon fa fa-laptop"></i>Dashboard
                     </a>
                 </li>
-                <li class="menu-title">Essentials</li>
+                <li class="menu-title ">Essentials</li>
                 <!-- /.menu-title -->
                 <li class="">
                     <a href="{{ route('transactions.create','type=Essential')}}">
@@ -32,17 +32,22 @@
                         Pembelian</a>
                 </li>
 
-                <li class="menu-title">Savings</li>
+                <li class="menu-title">Total Balance + Saving</li>
                 <!-- /.menu-title -->
                 <li class="">
-                    <a href="{{ route('transactions.create','type=Saving') }}">
+                    <a href="{{ route('transactions.create','type=Total') }}">
                         <i class="menu-icon fa fa-plus"></i>Tambah
-                        Tabungan</a>
+                        Uang</a>
                 </li>
                 <!-- <form class="px-4 py-0" , action="{{url('logout')}}" , method="POST">
                     @csrf
+<<<<<<< HEAD
                     <button type="submit" class="btn btn-sm btn-primary ">Logout(tombol sementara)</button>
                 </form> -->
+=======
+                    <button type="submit" class="btn btn-sm btn-primary "></button>
+                </form>
+>>>>>>> 914e147251b7721e89cc67ca71bc0295410c47d0
             </ul>
         </div>
         <!-- /.navbar-collapse -->

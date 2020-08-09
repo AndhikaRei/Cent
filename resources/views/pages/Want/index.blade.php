@@ -23,12 +23,12 @@
                         <tbody>
                             <?php $i = 1; ?>
                             @forelse ($items as $item)
-                            <tr>
+                            <tr class="bg-light">
                                 <td>{{ $i }}</td>
                                 <td>{{ $item->name }}</td>
-                                <td class="d-none d-md-table-cell" >{{ $item->location }}</td>
+                                <td class="d-none d-md-table-cell">{{ $item->location }}</td>
                                 <td>Rp. {{ $item->price }}</td>
-                                <td class="d-none d-md-table-cell" >
+                                <td class="d-none d-md-table-cell">
                                     @if ($item->status=="Failed")
                                     <span class="badge badge-danger">
                                         @elseif ($item->status=="Success")
@@ -44,7 +44,8 @@
                                         class="btn btn-primary btn-sm">
                                         <i class="fa fa-eye"></i>
                                     </a>
-                                    <form action="{{ route('transactions.destroy', $item->id) }}" method="post" class="d-inline">
+                                    <form action="{{ route('transactions.destroy', $item->id) }}" method="post"
+                                        class="d-inline">
                                         @csrf
                                         @method('delete')
                                         <button class="btn btn-danger btn-sm">
