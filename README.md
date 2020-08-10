@@ -56,8 +56,7 @@ Untuk sistem operasi Windows, tools yang direkomendasikan untuk membuat aplikasi
 5. Laravel dan kebutuhan lainnya sudah terinstall di laragon
 6. Kalian bisa memasang Adminer atau PHPMyAdmin sebagai Database Toolsnya, hanya saja, saya lebih merekomendasikan Adminer karena lebih simple
 7. Untuk pemasangan PHPMyAdmin, kalian bisa melakukan langkah dibawah ini (credit to inwepo).
-   
-
+   <div>
    a. Unduh paket phpMyAdmin melalui link yang telah disediakan. Setelah pengunduhan, nantinya kita akan di beri file kompresi dengan ekstensi .zip di dalamnya.
    <p align="center"><img src="unduh.png"></p>
    b. Ekstrak isi dalam file terkait menuju direktori laragon/etc/apps (Umumnya, direktori tersebut berada pada partisi C: atau di manapun kamu menginstal Laragon).
@@ -68,7 +67,7 @@ Untuk sistem operasi Windows, tools yang direkomendasikan untuk membuat aplikasi
    <p align="center"><img src="phpadmin.png" width="400"></p>
    e. Jika berhasil, nantinya akan muncul halaman login aplikasi phpMyAdmin. Aplikasi phpMyAdmin sudah siap untuk di gunakan. 
    <p align="center"><img src="login.png" width="400"></p>
-
+   </div>
 <h3> macOS </h3>
 <div>
 Untuk macOS, saya merekomendasikan untuk memakai Laravel Valet yang proses instalasinya dapat dibuka disini :
