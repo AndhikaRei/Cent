@@ -7,9 +7,12 @@ html {
     background-color: #f2f2f2;
 }
 
-.menu-title {
+.menu-titles {
     color: #d8bb7f !important;
     font-weight: 700;
+    width: 90% !important;
+    margin: 0 auto;
+    font-size: 0.9rem;
 }
 
 .navbar-brand {
@@ -17,10 +20,6 @@ html {
 }
 
 @media (max-width: 500px) {
-    .menu-title {
-        display: block !important;
-    }
-
     .navbar-header {
         display: flex;
     }

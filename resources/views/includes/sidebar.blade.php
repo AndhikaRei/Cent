@@ -6,7 +6,7 @@
                     <a href="{{ route('dashboard') }}"><i class="menu-icon fa fa-laptop"></i>Dashboard
                     </a>
                 </li>
-                <li class="menu-title ">Essentials</li>
+                <li class="menu-titles">Essentials</li>
                 <!-- /.menu-title -->
                 <li class="">
                     <a href="{{ route('transactions.create','type=Essential')}}">
@@ -19,7 +19,7 @@
                         Pembelian</a>
                 </li>
 
-                <li class="menu-title">Wants</li>
+                <li class="menu-titles">Wants</li>
                 <!-- /.menu-title -->
                 <li class="">
                     <a href="{{ route('transactions.create','type=Want') }}">
@@ -32,7 +32,7 @@
                         Pembelian</a>
                 </li>
 
-                <li class="menu-title">Total Balance + Saving</li>
+                <li class="menu-titles">Total Balance + Saving</li>
                 <!-- /.menu-title -->
                 <li class="">
                     <a href="{{ route('transactions.create','type=Total') }}">
