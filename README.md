@@ -156,3 +156,21 @@ php artisan db:seed
 Command diatas akan mengisi database dengan dummy data.
 
 #### 9. Akses webpage
+
+Buka terminal di folder `cent` dan jalankan command :
+```
+php artisan serve
+```
+Setelah command dimasukkan, akan muncul line berikut :
+<p align="center"><img src="developmentServerStarted.png"></p>
+Salin link yang tertera pada command line tersebut dan tempel pada address bar browser pilihan Anda.
+
+Link tersebut akan membawa Anda menuju webpage Cent.
+
+#### 10. Registrasi dan Login
+
+Jika Anda belum memiliki akun, anda dapat memilih menu Register atau menambahkan `/register` pada bagian belakang alamat web pada address bar.
+
+Anda akan diminta untuk memasukkan nama, email, dan password untuk registrasi. Password memiliki syarat panjang minimal 8 karakter.
+
+Jika Anda sudah memiliki akun, anda dapat memilih menu Sign In atau menambahkan `/login` pada bagian belakang alamat web pada address bar. Anda kemudian akan diminta untuk memasukkan informasi akun Anda.
