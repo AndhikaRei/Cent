@@ -11,7 +11,7 @@ Dengan anggota dan pembagian tugasnya adalah sebagai berikut:
 	<p> 5. James Chandra 16519446 - Front end </p>
 	<p> 6. Muhammad Galih R R 16519455 - Front end </p>
 	<p> Kelompok 8 Buddies 4 </p>
-	<p> 1. Haning Nanda H 16519004 - Penjelasan pemasangan phpMyAdmin </p>
+	<p> 1. Haning Nanda H 16519004 - Penjelasan pemasangan phpMyAdmin dan Laravel</p>
 	<p> 2. M Reyhanullah B 165199306 - Penjelasan </p>
 	<p> 3. Muhammad Iqbal S 16519349 - Penjelasan cara menjalankan program</p>
 	<p> 4. Cindy Amandani N 165199410 - Penjelasan pemasangan Laragon</p>
