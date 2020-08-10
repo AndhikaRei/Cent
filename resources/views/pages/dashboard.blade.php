@@ -143,6 +143,7 @@
         </div>
     </div>
 </div>
+
 @endsection
 
 @push('after-script')
@@ -155,33 +156,21 @@
         var piedata = [{
                 label: "Essentials",
                 data: [
-                    [0, {
-                        {
-                            $pie['essential']
-                        }
-                    }]
+                    [0, {{ $pie['essential'] }} ]
                 ],
                 color: '#5c6bc0'
             },
             {
                 label: "Want",
                 data: [
-                    [0, {
-                        {
-                            $pie['want']
-                        }
-                    }]
+                    [0, {{ $pie['want'] }}]
                 ],
                 color: '#ef5350'
             },
             {
                 label: "Saving",
                 data: [
-                    [0, {
-                        {
-                            $pie['store']
-                        }
-                    }]
+                    [0, {{ $pie['store'] }}]
                 ],
                 color: '#66bb6a'
             }

@@ -148,7 +148,7 @@ class TransactionController extends Controller
 
     public function undo($id) {
         $user_id = Auth::user()->id;
-        $transaction = Transaction::findOrFail($id)->first();
+        $transaction = Transaction::find($id);
 
         $moneytotal = Money::where('user_id', $user_id)->first();
         $money = Money::where('user_id', $user_id)->where('type',$transaction->type)->first();

@@ -24,11 +24,11 @@ class DashboardController extends Controller
         $bank = Money::where('user_id', $user_id)->where('type',"Bank")->first();
         $user = User::findOrFail(Auth::user()->id);
 
-        $items = Transaction::orderBy('date','DESC')->orderBy('time','DESC')->take(10)->get();
+        $items = Transaction::where('user_id',$user_id)->orderBy('date','DESC')->orderBy('time','DESC')->take(10)->get();
 
         $pie = [
-            'want'=>Transaction::where('type','Want')->sum('price'),
-            'essential'=>Transaction::where('type','Essential')->sum('price'),
+            'want'=>Transaction::where('user_id',$user_id)->where('type','Want')->sum('price'),
+            'essential'=>Transaction::where('user_id',$user_id)->where('type','Essential')->sum('price'),
             'store'=> $bank ->amount
         ];
         return view('pages.dashboard',[
