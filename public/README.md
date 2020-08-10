@@ -1,8 +1,5 @@
 <p align="center"><image src="boom.png" width="400"></p>
 
-# Cent
-placeholder.descripton
-
 # Requirements
 
 * Laragon
@@ -12,6 +9,7 @@ placeholder.descripton
 # Getting Started
 
 ### 1. Clone Repository
+Buka folder `C:\laragon\www` kemudian clone repository dengan command berikut.
 ```
 git clone https://github.com/AndhikaRei/Cent.git
 cd cent
@@ -67,4 +65,3 @@ Command diatas akan mengisi database dengan dummy data.
 
 #### 9. Akses webpage
 
-#### `http://cent.test`
