@@ -6,7 +6,9 @@
                     <a href="{{ route('dashboard') }}"><i class="menu-icon fa fa-laptop"></i>Dashboard
                     </a>
                 </li>
-                <li class="menu-titles">Essentials</li>
+                <br>
+
+                <li class="menu-titles mt-3">Essentials</li>
                 <!-- /.menu-title -->
                 <li class="">
                     <a href="{{ route('transactions.create','type=Essential')}}">
@@ -18,8 +20,9 @@
                         <i class="menu-icon fa fa-money"></i>Riwayat
                         Pembelian</a>
                 </li>
+                <br>
 
-                <li class="menu-titles">Wants</li>
+                <li class="menu-titles mt-3">Wants</li>
                 <!-- /.menu-title -->
                 <li class="">
                     <a href="{{ route('transactions.create','type=Want') }}">
@@ -31,8 +34,9 @@
                         <i class="menu-icon fa fa-money"></i>Riwayat
                         Pembelian</a>
                 </li>
+                <br>
 
-                <li class="menu-titles">Total Balance + Saving</li>
+                <li class="menu-titles mt-3">Total Balance + Saving</li>
                 <!-- /.menu-title -->
                 <li class="">
                     <a href="{{ route('transactions.create','type=Total') }}">
