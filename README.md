@@ -4,12 +4,12 @@ Solusi dari Kelompok 24 bernama BEBAS adalah sebuah web yang beranama Cent
 
 Dengan anggota dan pembagian tugasnya adalah sebagai berikut:
 <p> Kelompok 10 Buddies 1 </p>
-	<p> 1. Nicholas Darmawan 16519009 - Front end </p>
+	<p> 1. Nicholas Darmawan 16519009 - Front end - Dashboard </p>
 	<p> 2. Reihan Andika Putra 16519316 - Back end </p>
 	<p> 3. Kadek Dwi Bagus AU 16519350 - Back end </p>
-	<p> 4. Karel Renaldi 16519445 - Front end </p>
-	<p> 5. James Chandra 16519446 - Front end </p>
-	<p> 6. Muhammad Galih R R 16519455 - Front end </p>
+	<p> 4. Karel Renaldi 16519445 - Front end - Login,Register,Forget Password,finishing </p>
+	<p> 5. James Chandra 16519446 - Front end - index </p>
+	<p> 6. Muhammad Galih R R 16519455 - Front end - add data </p>
 	<p> Kelompok 8 Buddies 4 </p>
 	<p> 1. Haning Nanda H 16519004 - Penjelasan pemasangan phpMyAdmin dan Laravel</p>
 	<p> 2. M Reyhanullah B 165199306 - Penjelasan </p>
