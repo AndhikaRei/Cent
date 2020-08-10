@@ -49,7 +49,7 @@
                     @csrf
                     <div class="form-group">
                         <label for="amount" class="form-control-label">Mentransfer Uang Ke Tabungan</label>
-                        <input type="number" name="amount" id="amount" value="{{ old('name') }}"
+                        <input type="number" min="0" name="amount" id="amount" value="{{ old('name') }}"
                             class="form-control @error('amount') is-invalid @enderror" placeholder="Nominal" />
                         @error('amount')
                         <div class="text-muted">{{$message}}</div>
@@ -76,7 +76,7 @@
                     @method('PUT')
                     <div class="form-group">
                         <label for="amount" class="col-form-label"> Tambahkan Uang</label>
-                        <input type="number" class="form-control" id="amount" name="amount" placeholder="nominal">
+                        <input type="number" min="0" class="form-control" id="amount" name="amount" placeholder="nominal">
                     </div>
                     <button class="btn-cent" type="submit" name="create" value="create">
                         Tambah Uang

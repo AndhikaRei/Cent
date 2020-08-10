@@ -57,7 +57,7 @@
                     </div>
                     <div class="form-group">
                         <label for="price" class="form-control-label">Nominal</label>
-                        <input type="number" name="price" id="price" value="{{ old('price') }}"
+                        <input type="number" min="0" name="price" id="price" value="{{ old('price') }}"
                             class="form-control @error('price') is-invalid @enderror" placeholder="Nominal" />
                         @error('price')
                         <div class="text-muted">{{$message}}</div>
