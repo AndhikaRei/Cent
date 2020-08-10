@@ -12,7 +12,7 @@ Dengan anggota dan pembagian tugasnya adalah sebagai berikut:
 	<p> 6. Muhammad Galih R R 16519455 - Front end - add data </p>
 	<p> Kelompok 8 Buddies 4 </p>
 	<p> 1. Haning Nanda H 16519004 - Penjelasan pemasangan phpMyAdmin dan Laravel</p>
-	<p> 2. M Reyhanullah B 165199306 - Penjelasan </p>
+	<p> 2. M Reyhanullah B 165199306 - Penjelasan fitur</p>
 	<p> 3. Muhammad Iqbal S 16519349 - Penjelasan cara menjalankan program</p>
 	<p> 4. Cindy Amandani N 165199410 - Penjelasan pemasangan Laragon</p>
 	<p> 5. Ilyasa Salafi Putra J 16519457 - Penjelasan akses webpage dan login</p>
@@ -179,3 +179,31 @@ Masukkan data-data untuk membuat akun baru. Setelah selesai, Anda akan langsung 
 Berikut tampilannya :
 <p align="center"><img src="webpage.PNG"></p>
 Dari sini, Anda dapat mengakses fitur Cent dari berbagai tombol menu yang ditampilkan. 
+
+# Fitur
+
+### Penambahan Balance
+Anda dapat menambahkan uang anda dengan menekan +Add pada Balance.
+<p align="center"><img src="AddBalance1.png"></p>
+Kemudian akan muncul form seperti pada gambar berikut.
+<p align="center"><img src="AddBalance2.png"></p>
+Tuliskan nominal uang anda pada kolom "Tambahkan Uang". Setelah menulis nominal uang anda, tekan tombol Tambah Uang.
+Uang anda akan dibagi secara otomatis dan dapat anda liat rinciannya pada Details.
+
+### Transaksi
+Anda dapat menambahkan transaksi anda dengan menekan tombol "Tambah Pembelian". 
+Tekan tombol "Tambah Pembelian" dibawah menu Essentials Untuk kebutuhan sehari-hari, dan dibawah menu Wants untuk keperluan yang diingingkan (wants).
+Setelah menekan tombol tersebut akan muncul form seperti berikut.
+<p align="center"><img src="TambahPembelian.PNG"></p>
+Isi form tersebut sesuai transaksi anda. Isi tanggal dan waktu dengan menekan ikon kalender dan jam. Jika data yang diisi sudah benar, tekan tombol Tambahkan.
+
+Jika ingin melihat riwayat transaksi yang sudah pernah dilakukan, tekan tombol "Riwayat Pembelian" pada menu Essentials untuk transaksi Essentials, dan pada menu wants untuk transaksi wants
+
+### Saving
+Anda dapat menambah tabungan dengan menekan tombol "Tambah Uang" pada menu "Total Balance + Saving". setelah menekan, akan muncul tampilan seperti berikut.
+<p align="center"><img src="TambahUang.PNG"></p>
+Pada kolom Savings, uang yang telah dialokasikan ke Savings tadi akan disimpan di bank sesuai dengan nominal yang diberikan. Jika anda ingin menabung dengan uang selain dari Savings, anda dapat memasukkan nominal uangnya pada kolom "Tambah Uang Total".
+
+
+Jika nominal uang yang dituliskan melebihi nominal pada savings, wants, atau essentials, akan ditampilkan pesan "You have insufficient money" seperti pada gambar berikut.
+<p align="center"><img src="NotEnough.PNG"></p>
