@@ -15,7 +15,7 @@ Dengan anggota dan pembagian tugasnya adalah sebagai berikut:
 	<p> 2. M Reyhanullah B 165199306 - Penjelasan </p>
 	<p> 3. Muhammad Iqbal S 16519349 - Penjelasan cara menjalankan program</p>
 	<p> 4. Cindy Amandani N 165199410 - Penjelasan pemasangan Laragon</p>
-	<p> 5. Ilyasa Salafi Putra J 16519457 - Penjelasan</p>
+	<p> 5. Ilyasa Salafi Putra J 16519457 - Penjelasan akses webpage dan login</p>
 	<p> 6. Muhammad Asyrofi Al H 16519494</p>
 
 
@@ -129,7 +129,7 @@ Command diatas akan meng-copy `.env.example` menjadi `.env`
 
 Laravel memerlukan kode enkripsi pada file `.env`. Command berikut akan menambah `APP_KEY` pada file `.env`.
 ```
-php artican key:generate
+php artisan key:generate
 ```
 
 #### 5. Buat database baru
@@ -162,15 +162,20 @@ Buka terminal di folder `cent` dan jalankan command :
 php artisan serve
 ```
 Setelah command dimasukkan, akan muncul line berikut :
-<p align="center"><img src="developmentServerStarted.png"></p>
+<p align="center"><img src="developmentServerStarted.PNG"></p>
 Salin link yang tertera pada command line tersebut dan tempel pada address bar browser pilihan Anda.
 
 Link tersebut akan membawa Anda menuju webpage Cent.
 
-#### 10. Registrasi dan Login
+#### 10. Login dan Registrasi
 
-Jika Anda belum memiliki akun, anda dapat memilih menu Register atau menambahkan `/register` pada bagian belakang alamat web pada address bar.
+Saat mengakses webpage Cent, Anda akan menemui tampilan seperti dibawah ini :
+<p align="center"><img src="centLogin.PNG"></p>
+Jika Anda sudah memiliki akun, Anda dapat memasukkan email dan password akun anda untuk melanjutkan ke webpage utama Cent.
 
-Anda akan diminta untuk memasukkan nama, email, dan password untuk registrasi. Password memiliki syarat panjang minimal 8 karakter.
-
-Jika Anda sudah memiliki akun, anda dapat memilih menu Sign In atau menambahkan `/login` pada bagian belakang alamat web pada address bar. Anda kemudian akan diminta untuk memasukkan informasi akun Anda.
+Jika Anda belum memiliki akun, Anda dapat menekan tombol Sign Up Here. Tombol ini akan membawa Anda menuju laman pendaftaran seperti berikut :
+<p align="center"><img src="register.PNG"></p>
+Masukkan data-data untuk membuat akun baru. Setelah selesai, Anda akan langsung dibawa menuju webpage utama Cent.
+Berikut tampilannya :
+<p align="center"><img src="webpage.PNG"></p>
+Dari sini, Anda dapat mengakses fitur Cent dari berbagai tombol menu yang ditampilkan. 
