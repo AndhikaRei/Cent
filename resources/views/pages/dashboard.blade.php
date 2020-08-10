@@ -132,13 +132,13 @@
         </div>
         <div class="legend-chart">
             <h4 class="essentials">
-                <i class="menu-icon fa fa-cube"></i> Essentials
+                <i class="menu-icon fa fa-cube"></i> Bank
             </h4>
             <h4 class="wants">
                 <i class="menu-icon fa fa-cube"></i> Wants
             </h4>
             <h4 class="savings">
-                <i class="menu-icon fa fa-cube"></i> Savings
+                <i class="menu-icon fa fa-cube"></i> Essentials
             </h4>
         </div>
     </div>
