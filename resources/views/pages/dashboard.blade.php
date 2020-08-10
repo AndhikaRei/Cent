@@ -13,7 +13,7 @@
                         <a href="#mymodal" data-remote="{{ route('moneys.create') }}" data-toggle="modal"
                             data-target="#mymodal" data-title="Tambah Uang Anda">+ Add</a>
                     </div>
-                    <h2 class="money">Rp.{{ $moneytotal->amount }},000</h2>
+                    <h2 class="money">Rp.{{ $moneytotal->amount }},00</h2>
                 </div>
             </div>
         </div>
@@ -27,11 +27,11 @@
 
                     <dl class="row mb-0">
                         <dt class="col-3 offset-3">Wants</dt>
-                        <dd class="col-5 offset-1">Rp.{{ $want->amount }},000</dd>
+                        <dd class="col-5 offset-1">Rp.{{ $want->amount }},00</dd>
                         <dt class="col-3 offset-3">Essential</dt>
-                        <dd class="col-5 offset-1">Rp.{{ $essential->amount }},000</dd>
+                        <dd class="col-5 offset-1">Rp.{{ $essential->amount }},00</dd>
                         <dt class="col-3 offset-3">Savings</dt>
-                        <dd class="col-5 offset-1">Rp.{{ $saving->amount }},000</dd>
+                        <dd class="col-5 offset-1">Rp.{{ $saving->amount }},00</dd>
                     </dl>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                     <div class="card-body-text">
                         <h4>Bank</h4>
                     </div>
-                    <h2 class="money">Rp.{{ $bank->amount }},000</h2>
+                    <h2 class="money">Rp.{{ $bank->amount }},00</h2>
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@
                                         <td>{{ $i }}</td>
                                         <td>{{ $item->name }}</td>
                                         <td class="d-none d-md-table-cell">{{ $item->location }}</td>
-                                        <td>Rp. {{ $item->price }}</td>
+                                        <td>Rp. {{ $item->price }},00</td>
                                         <td>{{ $item->type }}</td>
                                         <td class="d-none d-md-table-cell">{{ $item->date }}</td>
                                         <td class="d-none d-md-table-cell">{{ $item->time }}</td>
@@ -104,7 +104,7 @@
                                     <?php $i++ ; ?>
                                     @empty
                                     <tr>
-                                        <td colspan="6" class="text-center p-5">
+                                        <td colspan="8" class="text-center p-5">
                                             Data tidak tersedia
                                         </td>
                                     </tr>

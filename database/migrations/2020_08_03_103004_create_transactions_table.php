@@ -24,6 +24,7 @@ class CreateTransactionsTable extends Migration
             $table->time('time')->nullable();
             $table->string('location');
             $table->string('status');
+            $table->integer('save_used');
 
             $table->softDeletes();
             $table->timestamps();

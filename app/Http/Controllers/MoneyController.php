@@ -45,8 +45,7 @@ class MoneyController extends Controller
         $essential = Money::where('user_id', $user_id)->where('type',"Essential")->first();
         $saving = Money::where('user_id', $user_id)->where('type','Saving')->first();
         $bank = Money::where('user_id', $user_id)->where('type',"Bank")->first();
-
-        if ($moneytotal < $store) {
+        if ($moneytotal->amount < $store) {
             return redirect()->back()->with(['moneyerror'=>'You have insufficient money']);
         } elseif ($saving->amount >= $store) {
                 $saving -> update(['amount'=> $saving->amount - $store]);

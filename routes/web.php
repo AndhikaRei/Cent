@@ -19,6 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('transactions', 'TransactionController');
+Route::get('/undo/{id}', 'TransactionController@undo')->name('transactions.undo');
 
 Route::resource('moneys', 'MoneyController');
 Route::get('/initiate', 'MoneyController@initiate')->name('moneys.initiate');

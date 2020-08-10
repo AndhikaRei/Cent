@@ -11,7 +11,7 @@ class Transaction extends Model
     use SoftDeletes;
     
     protected $fillable = [
-        'user_id','type','price','name','description','date','time','location','status'
+        'user_id','type','price','name','description','date','time','location','status','save_used'
     ] ;
 
     protected $hidden = [

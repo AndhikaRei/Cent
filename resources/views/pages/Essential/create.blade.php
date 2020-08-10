@@ -6,7 +6,7 @@
         @if (session()->has('moneyerror'))
         <div class="alert alert-danger px-5"> {{session()->get('moneyerror')}}</div>
         @endif
-        
+
         @if ($errors->any())
         <div class="alert alert-danger px-5">
             <ul>
@@ -23,7 +23,7 @@
                 <div class="card-body-text">
                     <h4>Balance for Essentials</h4>
                 </div>
-                <h2 class="money">Rp.{{ $money->amount }},000</h2>
+                <h2 class="money">Rp.{{ $money->amount }},00</h2>
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
                 <div class="card-body-text">
                     <h4>Savings</h4>
                 </div>
-                <h2 class="money">Rp.{{ $saving->amount }},000</h2>
+                <h2 class="money">Rp.{{ $saving->amount }},00</h2>
             </div>
         </div>
     </div>
@@ -42,7 +42,7 @@
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                <strong>Lakukan Pembelian Essentials</strong>
+                <strong>Lakukan Transaksi Essentials</strong>
             </div>
             <div class="card-body card-block">
                 <form action="{{ route('transactions.store') }}" method="POST">

@@ -27,7 +27,7 @@
                                 <td>{{ $i }}</td>
                                 <td>{{ $item->name }}</td>
                                 <td class="d-none d-md-table-cell">{{ $item->location }}</td>
-                                <td>Rp. {{ $item->price }}</td>
+                                <td>Rp. {{ $item->price }},00</td>
                                 <td class="d-none d-md-table-cell">
                                     @if ($item->status=="Failed")
                                     <span class="badge badge-danger">
@@ -43,6 +43,9 @@
                                         data-toggle="modal" data-target="#mymodal" data-title="Lihat Detail Transaksi"
                                         class="btn btn-primary btn-sm">
                                         <i class="fa fa-eye"></i>
+                                    </a>
+                                    <a href="{{ route('transactions.edit', $item->id) }}" class="btn btn-info btn-sm">
+                                        <i class="fa fa-pencil"></i>
                                     </a>
                                     <form action="{{ route('transactions.destroy', $item->id) }}" method="post"
                                         class="d-inline">

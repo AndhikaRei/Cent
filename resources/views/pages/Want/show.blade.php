@@ -34,3 +34,10 @@
         </td>
     </tr>
 </table>
+<div class="row">
+    <div class="col-4">
+        <a href="{{route('transactions.undo', $item->id)}}" class="btn btn-info btn-block">
+            <i class="fa fa-undo"> Batalkan Transaksi ini</i>
+        </a>
+    </div>
+</div>

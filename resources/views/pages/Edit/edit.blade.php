@@ -17,39 +17,19 @@
         </div>
         @endif
     </div>
-    <div class="col-lg-6 col-md-6">
-        <div class="card card-money">
-            <div class="card-body card-money-body">
-                <div class="card-body-text">
-                    <h4>Balance for Want</h4>
-                </div>
-                <h2 class="money">Rp.{{ $money->amount }},00</h2>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-6 col-md-6">
-        <div class="card card-money">
-            <div class="card-body card-money-body">
-                <div class="card-body-text">
-                    <h4>Savings</h4>
-                </div>
-                <h2 class="money">Rp.{{ $saving->amount }},00</h2>
-            </div>
-        </div>
-    </div>
     <!-- /Widgets -->
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                <strong>Lakukan Transaksi Want</strong>
+                <strong>Edit Data Transaksi {{ $item->name }}</strong>
             </div>
             <div class="card-body card-block">
-                <form action="{{ route('transactions.store') }}" method="POST">
+                <form action="{{ route('transactions.update',$item->id) }}" method="POST">
                     @csrf
+                    @method('PUT')
                     <div class="form-group">
                         <label for="name" class="form-control-label">Nama</label>
-                        <input type="text" name="name" id="name" value="{{ old('name') }}"
+                        <input type="text" name="name" id="name" value="{{ old('name') ? old('name') : $item->name }}"
                             class="form-control @error('name') is-invalid @enderror" placeholder="Nama" />
                         @error('name')
                         <div class="text-muted">{{$message}}</div>
@@ -57,7 +37,7 @@
                     </div>
                     <div class="form-group">
                         <label for="price" class="form-control-label">Nominal</label>
-                        <input type="number" name="price" id="price" value="{{ old('price') }}"
+                        <input type="hidden" name="price" id="price" value="{{$item->price}}"
                             class="form-control @error('price') is-invalid @enderror" placeholder="Nominal" />
                         @error('price')
                         <div class="text-muted">{{$message}}</div>
@@ -66,12 +46,15 @@
                     <div class="form-group">
                         <label for="description" class="form-control-label">Deskripsi</label>
                         <textarea name="description" id="description" rows="5" class="ckeditor form-control">
-                        {{ old('description') }}</textarea>
+                        {{old('description') ? old('description') : $item->description}}</textarea>
+                        @error('description')
+                        <div class="text-muted">{{$message}}</div>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label for="date" class="form-control-label">Tanggal</label>
                         <input id="datepicker" name="date" class="form-control @error('date') is-invalid @enderror"
-                            placeholder="Tanggal" />
+                            placeholder="Tanggal" value="{{ old('date') ? old('date') : $item->date }}" />
                         <script>
                             $("#datepicker").datepicker();
 
@@ -83,7 +66,7 @@
                     <div class="form-group">
                         <label for="time" class="form-control-label">Waktu</label>
                         <input id="timepicker" name="time" class="form-control @error('time') is-invalid @enderror"
-                            placeholder="Waktu" />
+                            placeholder="Waktu" value="{{ old('time') ? old('time') : $item->time }}" />
                         <script>
                             $("#timepicker").timepicker();
 
@@ -94,16 +77,17 @@
                     </div>
                     <div class="form-group">
                         <label for="location" class="form-control-label">Lokasi</label>
-                        <input type="text" name="location" id="location" value=""
+                        <input type="text" name="location" id="location"
+                            value="{{ old('location') ? old('location') : $item->location }}"
                             class="form-control @error('location') is-invalid @enderror" placeholder="Lokasi" />
                         @error('location')
                         <div class="text-muted">{{$message}}</div>
                         @enderror
                     </div>
-                    <input type="hidden" name="type" value="Want">
+                    <input type="hidden" name="type" value="Essential">
                     <div class="form-group">
                         <button class="btn-cent" type="submit" name="create" value="create">
-                            Tambahkan
+                            Edit Data
                         </button>
                     </div>
                 </form>

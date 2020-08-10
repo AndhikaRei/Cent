@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Money;
 use App\Models\Transaction;
 use Illuminate\Support\Facades\Auth;
+use App\User;
 use App\Http\Requests\TransactionRequest;
 
 class TransactionController extends Controller
@@ -19,9 +20,11 @@ class TransactionController extends Controller
     {
         $user_id = Auth::user()->id;
         $type = $request->type;
+        $user = User::findOrFail(Auth::user()->id);
         $items = Transaction::where('user_id',$user_id)->where('type',$type)->get();
         return view("pages.$type.index", [
-            'items'=>$items
+            'items'=>$items,
+            'user' =>$user
         ]);
     }
 
@@ -34,6 +37,7 @@ class TransactionController extends Controller
     {
         $user_id = Auth::user()->id;
         $type = $request->type;
+        $user = User::findOrFail(Auth::user()->id);
         if ($type =="Total") {
             $money = Money::where('user_id', $user_id)->first();
         }else {
@@ -42,7 +46,8 @@ class TransactionController extends Controller
         $saving = Money::where('user_id', $user_id)->where('type','Saving')->first();
         return view("pages.$type.create", [
             'money' => $money,
-            'saving' => $saving
+            'saving' => $saving,
+            'user' => $user
         ]);
     }
 
@@ -66,6 +71,7 @@ class TransactionController extends Controller
                 return redirect()->back()->with(['moneyerror'=>'You have insufficient money']);
             } else {
                 $saving->update(['amount'=> $money->amount + $saving->amount - $request->price]);
+                $data['save_used'] = $request->price - $money->amount ;
                 $money->update(['amount'=>0]);
                 $moneytotal->update(['amount'=>$moneytotal->amount - $request->price]);
                 $data['status'] = 'Failed';
@@ -74,6 +80,7 @@ class TransactionController extends Controller
             $money->update(['amount'=> $money->amount - $request->price ]);
             $moneytotal->update(['amount'=>$moneytotal->amount - $request->price]);
             $data['status'] = 'Success';
+            $data['save_used'] = 0 ;
         }
         Transaction::create($data);
         return redirect()->route('dashboard');
@@ -102,7 +109,12 @@ class TransactionController extends Controller
      */
     public function edit($id)
     {
-        //
+        $item = Transaction::findOrFail($id);
+        $user = User::findOrFail(Auth::user()->id);
+        return view('pages.Edit.edit',[
+            'item' => $item,
+            'user' => $user
+        ]);
     }
 
     /**
@@ -112,9 +124,13 @@ class TransactionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(TransactionRequest $request, $id)
     {
-        //
+        $data = $request->all();
+        $type = $request->type ;
+        $item = Transaction::findOrFail($id);
+        $item->update($data);
+        return redirect() ->route('transactions.index',"type=$type");
     }
 
     /**
@@ -125,6 +141,23 @@ class TransactionController extends Controller
      */
     public function destroy($id)
     {
+        $item = Transaction::findOrFail($id);
+        $item->delete();
+        return redirect()->route('dashboard');
+    }
+
+    public function undo($id) {
+        $user_id = Auth::user()->id;
+        $transaction = Transaction::findOrFail($id)->first();
+
+        $moneytotal = Money::where('user_id', $user_id)->first();
+        $money = Money::where('user_id', $user_id)->where('type',$transaction->type)->first();
+        $saving = Money::where('user_id', $user_id)->where('type','Saving')->first();
+
+        $saving->update(['amount'=> $saving->amount + $transaction->save_used]);
+        $money->update(['amount'=> $money->amount - $transaction->save_used + $transaction->price]);
+        $moneytotal->update(['amount'=> $moneytotal->amount + $transaction->price]);
+
         $item = Transaction::findOrFail($id);
         $item->delete();
         return redirect()->route('dashboard');

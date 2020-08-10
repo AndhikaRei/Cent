@@ -28,7 +28,9 @@ class TransactionRequest extends FormRequest
             'price'=>'required|integer',
             'name'=>'required',
             'description'=>'max:255',
-            'location'=>'required'
+            'location'=>'required',
+            'time' =>'required',
+            'date' =>'required'
         ];
     }
 }

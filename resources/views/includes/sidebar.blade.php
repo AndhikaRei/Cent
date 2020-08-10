@@ -41,13 +41,8 @@
                 </li>
                 <!-- <form class="px-4 py-0" , action="{{url('logout')}}" , method="POST">
                     @csrf
-<<<<<<< HEAD
                     <button type="submit" class="btn btn-sm btn-primary ">Logout(tombol sementara)</button>
                 </form> -->
-=======
-                    <button type="submit" class="btn btn-sm btn-primary "></button>
-                </form>
->>>>>>> 914e147251b7721e89cc67ca71bc0295410c47d0
             </ul>
         </div>
         <!-- /.navbar-collapse -->
