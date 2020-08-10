@@ -204,6 +204,6 @@ Anda dapat menambah tabungan dengan menekan tombol "Tambah Uang" pada menu "Tota
 <p align="center"><img src="TambahUang.PNG"></p>
 Pada kolom Savings, uang yang telah dialokasikan ke Savings tadi akan disimpan di bank sesuai dengan nominal yang diberikan. Jika anda ingin menabung dengan uang selain dari Savings, anda dapat memasukkan nominal uangnya pada kolom "Tambah Uang Total".
 
-
+### 
 Jika nominal uang yang dituliskan melebihi nominal pada savings, wants, atau essentials, akan ditampilkan pesan "You have insufficient money" seperti pada gambar berikut.
 <p align="center"><img src="NotEnough.PNG"></p>
