@@ -186,7 +186,7 @@ Dari sini, Anda dapat mengakses fitur Cent dari berbagai tombol menu yang ditamp
 Anda dapat menambahkan uang anda dengan menekan +Add pada Balance.
 <p align="center"><img src="AddBalance1.png"></p>
 Kemudian akan muncul form seperti pada gambar berikut.
-<p align="center"><img src="AddBalance2.png"></p>
+<p align="center"><img src="AddBalance2.PNG"></p>
 Tuliskan nominal uang anda pada kolom "Tambahkan Uang". Setelah menulis nominal uang anda, tekan tombol Tambah Uang.
 Uang anda akan dibagi secara otomatis dan dapat anda liat rinciannya pada Details.
 
