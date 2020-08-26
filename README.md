@@ -8,7 +8,7 @@ Dengan anggota dan pembagian tugasnya adalah sebagai berikut:
 	<p> 2. Reihan Andika Putra 16519316 - Back end </p>
 	<p> 3. Kadek Dwi Bagus AU 16519350 - Back end </p>
 	<p> 4. Karel Renaldi 16519445 - Front end - Login,Register,Forget Password,finishing </p>
-	<p> 5. James Chandra 16519446 - Front end - index </p>
+	<p> 5. James Chandra 16519446 - Front end - Index - Visual Design & Mockup </p>
 	<p> 6. Muhammad Galih R R 16519455 - Front end - add data </p>
 	<p> Kelompok 8 Buddies 4 </p>
 	<p> 1. Haning Nanda H 16519004 - Penjelasan pemasangan phpMyAdmin dan Laravel</p>
