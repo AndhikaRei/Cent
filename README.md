@@ -1,45 +1,14 @@
 <p align="center"><img src="boom.png" width="400"></p>
 
-Solusi dari Kelompok 24 bernama BEBAS adalah sebuah web yang beranama Cent
-
-Dengan anggota dan pembagian tugasnya adalah sebagai berikut:
-<p> Kelompok 10 Buddies 1 </p>
-	<p> 1. Nicholas Darmawan 16519009 - Front end - Dashboard </p>
-	<p> 2. Reihan Andika Putra 16519316 - Back end </p>
-	<p> 3. Kadek Dwi Bagus AU 16519350 - Back end </p>
-	<p> 4. Karel Renaldi 16519445 - Front end - Login,Register,Forget Password,finishing </p>
-	<p> 5. James Chandra 16519446 - Front end - Index - Visual Design & Mockup </p>
-	<p> 6. Muhammad Galih R R 16519455 - Front end - add data </p>
-	<p> Kelompok 8 Buddies 4 </p>
-	<p> 1. Haning Nanda H 16519004 - Penjelasan pemasangan phpMyAdmin dan Laravel</p>
-	<p> 2. M Reyhanullah B 165199306 - Penjelasan fitur</p>
-	<p> 3. Muhammad Iqbal S 16519349 - Penjelasan cara menjalankan program</p>
-	<p> 4. Cindy Amandani N 165199410 - Penjelasan pemasangan Laragon</p>
-	<p> 5. Ilyasa Salafi Putra J 16519457 - Penjelasan akses webpage dan login</p>
-	<p> 6. Muhammad Asyrofi Al H 16519494</p>
-
-
 # Cent
-
 Cent adalah sebuah web yang membantu agar penggunanya dapat mengatur keuangan secara proporsional sehingga uang dapat digunakan dengan baik.
 
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
 # Requirements
-
 * Laragon
 * phpMyAdmin
 * Composer
 
 ## Instalasi Tools Untuk Laravel
-
 Sebelum kamu dapat melanjutkan tahap Laravel, kamu dapat memasang tools di bawah ini sesuai dengan sistem operasi yang kamu gunakan
 
 Windows
@@ -99,7 +68,7 @@ Apabila kamu menggunakan laragon maka laravel sudah otomatis terinstall dan kamu
 
 # Cara Menjalanakan Programnya
 
-### 1. Clone Repository
+#### 1. Clone Repository
 
 Buka folder `C:\laragon\www` kemudian clone repository dan cd ke folder cent
 ```
@@ -207,3 +176,21 @@ Pada kolom Savings, uang yang telah dialokasikan ke Savings tadi akan disimpan d
 ### 
 Jika nominal uang yang dituliskan melebihi nominal pada savings, wants, atau essentials, akan ditampilkan pesan "You have insufficient money" seperti pada gambar berikut.
 <p align="center"><img src="NotEnough.PNG"></p>
+
+
+# Author Dan Pembagian Tugas
+Kelompok 10 Buddies 1:
+1. Nicholas Darmawan 16519009 - Front end - Dashboard
+2. Reihan Andika Putra 16519316 - Back end
+3. Kadek Dwi Bagus AU 16519350 - Back end
+4. Karel Renaldi 16519445 - Front end - Login,Register,Forget Password,finishing
+5. James Chandra 16519446 - Front end - Index - Visual Design & Mockup
+6. Muhammad Galih R R 16519455 - Front end - add data
+
+Kelompok 8 Buddies 4:
+1. Haning Nanda H 16519004 - Penjelasan pemasangan phpMyAdmin dan Laravel
+2. M Reyhanullah B 165199306 - Penjelasan fitur
+3. Muhammad Iqbal S 16519349 - Penjelasan cara menjalankan program
+4. Cindy Amandani N 165199410 - Penjelasan pemasangan Laragon
+5. Ilyasa Salafi Putra J 16519457 - Penjelasan akses webpage dan login
+6. Muhammad Asyrofi Al H 16519494</p>
